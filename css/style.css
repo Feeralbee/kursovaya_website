@@ -1,0 +1,86 @@
+body {
+	background-color: darkseagreen;
+	margin: 0;
+	font-size: 28px;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	min-height: 100%;
+}
+
+#header {
+	background-color: #43808f;
+	padding: 3%;
+	text-align: center;
+}
+
+#navbar {
+	overflow: hidden;
+	background-color: #333;
+}
+
+/* Ссылки навигационной панели */
+#navbar a {
+	float: left;
+	display: flex;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a:hover {
+	background-color: #ffffff;
+	color: black;
+}
+
+#navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+/* Содержимое страницы */
+.content {
+	padding: 16px;
+}
+
+/* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку панель навигации получает новое положение в верхней части страницы (position:fixed and top:0) */
+.sticky+.content {
+	padding-top: 60px;
+}
+
+.container {
+	max-width: 100%;
+	margin-left: 45%;
+	margin-right: 45%;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(0, 255, 136);
+	color: white;
+	text-align: justify;
+}
+
+.leftstr,
+.rightstr {
+	float: left;
+	/* Обтекание справа */
+	width: 50%;
+	/* Ширина текстового блока */
+}
+
+.rightstr {
+	text-align: right;
+	/* Выравнивание по правому краю */
+}
