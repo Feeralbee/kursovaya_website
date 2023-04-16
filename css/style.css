@@ -14,7 +14,11 @@ body {
 }
 
 #navbar {
+	display: flex;
 	overflow: hidden;
+	flex-wrap: wrap;
+	align-items: stretch;
+	text-align: center;
 	background-color: #333;
 }
 
@@ -22,6 +26,7 @@ body {
 #navbar a {
 	float: left;
 	display: flex;
+	flex-grow: 1;
 	color: #f2f2f2;
 	text-align: center;
 	padding: 1rem;
@@ -41,9 +46,17 @@ body {
 
 /* Содержимое страницы */
 .content {
+	display: flex;
+	flex-direction: column;
 	padding: 16px;
+	text-align: justify;
+	margin-bottom: 44px;
+	/* width: 80%; */
 }
 
+.content h1{
+	text-align: center;
+}
 /* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
 .sticky {
 	position: fixed;
@@ -54,12 +67,6 @@ body {
 /* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку панель навигации получает новое положение в верхней части страницы (position:fixed and top:0) */
 .sticky+.content {
 	padding-top: 60px;
-}
-
-.container {
-	max-width: 100%;
-	margin-left: 45%;
-	margin-right: 45%;
 }
 
 #footer {
@@ -74,6 +81,7 @@ body {
 
 .leftstr,
 .rightstr {
+	font-size: 14px;
 	float: left;
 	/* Обтекание справа */
 	width: 50%;
