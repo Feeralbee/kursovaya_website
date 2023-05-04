@@ -8,7 +8,7 @@ body {
 }
 
 #header {
-	background-color: #43808f;
+	background-color: #333;
 	padding: 3%;
 	text-align: center;
 }
@@ -19,7 +19,7 @@ body {
 	flex-wrap: wrap;
 	align-items: stretch;
 	text-align: center;
-	background-color: #333;
+	background-color: #616161;
 }
 
 /* Ссылки навигационной панели */
@@ -44,6 +44,8 @@ body {
 	color: white;
 }
 
+
+
 /* Содержимое страницы */
 .content {
 	display: flex;
@@ -54,9 +56,10 @@ body {
 	/* width: 80%; */
 }
 
-.content h1{
+.content h2 {
 	text-align: center;
 }
+
 /* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
 .sticky {
 	position: fixed;
@@ -74,13 +77,13 @@ body {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: rgb(0, 255, 136);
+	background-color: #4CAF50;
 	color: white;
 	text-align: justify;
 }
 
 .leftstr,
-.rightstr {
+.popup {
 	font-size: 14px;
 	float: left;
 	/* Обтекание справа */
@@ -88,7 +91,125 @@ body {
 	/* Ширина текстового блока */
 }
 
-.rightstr {
+.popup {
 	text-align: right;
 	/* Выравнивание по правому краю */
+}
+
+a:hover {
+	color: #4CAF50;
+}
+
+a {
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+/* Всплывающим окном - может быть везде, где угодно */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Фактическое всплывающее окно */
+.popup .popuptext {
+	visibility: hidden;
+	width: 260px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 30%;
+	margin-left: -80px;
+}
+
+.analog {
+	width: 200px;
+	height: 150px;
+}
+
+/* Всплывающее окно со стрелками */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Переключите этот класс - скрыть и показать всплывающее окно */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+h2 {
+	color: darkred;
+}
+
+h3 {
+	text-align: center;
+	color: darkcyan;
+}
+
+.quartercolumn {
+	float: left;
+	width: 100%
+}
+
+.quartercolumn img {
+	width: 25%;
+	border: 3px solid green;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+input[type=reset] {
+	background-color: #ff0000;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=reset]:hover {
+	background-color: #cf1c1c;
 }
