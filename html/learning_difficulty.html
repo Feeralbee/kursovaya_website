@@ -3,13 +3,13 @@
 
 <head>
   <title>Зачем изучать C++</title>
-<link type="../image/x-icon" href="../img/favicon.png" rel="icon">
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link type="../image/x-icon" href="../img/favicon.png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="../css/z9a.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <script src="../js/popup.js"></script>
+  <script src="../js/z9c.js"></script>
 </head>
 
 <body>
@@ -30,28 +30,62 @@
     <a href="./website_map.html">Карта сайта</a>
     <a href="./contacts.html">Контакты</a>
   </div>
-
-
+  <script src="../js/z9d.js"></script>
   <div class="content">
     <h2>Сложно ли изучить C++</h2>
-    <p>В C++ можно детально регулировать большинство операций. Например, указывать собственный аллокатор — контроллер
+    <p>
+      В C++ можно детально регулировать большинство операций. Например, указывать собственный аллокатор — контроллер
       операций с памятью. Чем больше возможностей, тем легче ошибиться и тем больше нужно знать, чтобы правильно
       пользоваться этими возможностями. Поэтому начать программировать на C++ может быть сложнее, чем на другом языке,
       который не позволяет производить такую тонкую настройку. Всё зависит от того, какую задачу необходимо решить.
       Например, для программирования высоконагруженных систем нужно понимать принципы работы процессора.
-      <br><br>
+    </p>
+    <p>
       Чтобы начать изучать C++, нужны те же базовые знания и умения, что и для изучения любого языка программирования:
       понимать, что такое алгоритм и как он работает. Чтобы профессионально писать код на C++, нужно знать его Стандарт.
-      <br><br>
+    </p>
+    <!-- Контейнер слайд-шоу -->
+    <div class="slideshow-container">
+
+      <!-- Полная ширина слайдов / цитат -->
+      <div class="mySlides">
+        <q>„Си (язык программирования) позволяет легко выстрелить себе в ногу; с C++ это сделать сложнее, но, когда вы
+          это делаете, вы отстреливаете себе ногу целиком.“</q>
+        <p class="author">- Бьярне Строуструп</p>
+      </div>
+
+      <div class="mySlides">
+        <q>„Иногда мне кажется, что единственным универсумом в программировании является цикл.“</q>
+        <p class="author">- Алан Перлис</p>
+      </div>
+
+      <div class="mySlides">
+        <q>„Для дилетанта лучшим пособием по программированию служит «Алиса в стране чудес»“</q>
+        <p class="author">- Алан Перлис</p>
+      </div>
+
+      <!-- Вперед/назад кнопки -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Точки/пули/индикаторы -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <p>
       Каждая функция и класс стандартной библиотеки языка C++ сделаны так, чтобы максимально общим образом решать задачи
       и при этом иметь минимальный overhead. Из-за этого многое на этом языке выглядит сложнее, например, обычный текст,
       который в языке Python представлен типом str, в C++ представляется сложным типом, полный вид которого выглядит
       так: std::basic_string<char, std::char_traits<char>, std::allocator<char>>.
     </p>
+    <script src="../js/z9j.js"></script>
   </div>
 
   <div id="footer">
-    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9</p>
+    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9 &nbsp <img id="footerimg" src="../img/favicon.png"></p>
     <div class="popup" onclick="myFunction()">Сайт аналог:
       https://practicum.yandex.ru/blog/yazyk-c-plus-dlya-chego-nuzhen/ &nbsp
       <span class="popuptext" id="myPopup"><img class="analog" src="../img/website_analog.png"></span>

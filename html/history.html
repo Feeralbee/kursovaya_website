@@ -3,13 +3,13 @@
 
 <head>
   <title>Зачем изучать C++</title>
-<link type="../image/x-icon" href="../img/favicon.png" rel="icon">
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link type="../image/x-icon" href="../img/favicon.png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="../css/z9a.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <script src="../js/popup.js"></script>
+  <script src="../js/z9c.js"></script>
 </head>
 
 <body>
@@ -31,17 +31,49 @@
     <a href="./contacts.html">Контакты</a>
   </div>
 
-
   <div class="content">
-    <h2>История C++</h2>
+    <h2 class="h2history">История C++</h2>
     <p>Первые версии языка C++ появились в начале 1980-х годов благодаря датскому программисту Бьёрну Страуструпу. Он
       вдохновился возможностями Simula, одного из первых языков с объектно-ориентированными элементами, и решил добавить
-      нечто подобное в C — низкоуровневый язык, в котором мало готовых инструментов. Так появился C с дополнениями,
-      главным из которых стали классы. В 1983 году язык C++ получил окончательное название. «++» означает «добавить
-      единицу»: к возможностям языка программирования C добавили ещё одну. </p>
+      нечто подобное в C — низкоуровневый язык, в котором мало готовых инструментов.</p>
+    <button type="button" class="collapsible">Продолжение</button>
+    <div class="content">
+      <p>
+        Так появился C с дополнениями,
+        главным из которых стали классы. В 1983 году язык C++ получил окончательное название. «++» означает «добавить
+        единицу»: к возможностям языка программирования C добавили ещё одну.
+      </p>
+    </div>
+    <script src="../js/z9h.js"></script>
+    <form action="handler.php" class="colorForm">
+      <p><select name="color">
+          <optgroup label="Цвет" class="color">
+            <option id="c1">Darkseagreen&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#8fbc8f</option>
+            <option id="c2">
+              Мандариновый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#fc0</option>
+            <option id="c3">Черный&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#000</option>
+            <option id="c4">Банановый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#fcf8cf</option>
+            <option id="c5">Сhartreuse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#c2f732</option>
+            <option id="c6">Grey Tabby&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#616161
+            </option>
+            <option id="c7">Красный&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#EE5F33
+            </option>
+            <option id="c8">
+              Белый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#ffffff
+            </option>
+            <option id="c9">Зеленый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#4caf50
+            </option>
+            <option id="c10">Rebeccapurple&nbsp;&nbsp;&nbsp;#663399 </option>
+            <option id="c11">Darkcyan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#008b8b
+            </option>
+            <option id="c12">Фиолетовый&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#8413a7</option>
+          </optgroup>
+        </select></p>
+    </form>
   </div>
+  <script src="../js/z9d.js"></script>
   <div id="footer">
-    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9</p>
+    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9 &nbsp <img id="footerimg" src="../img/favicon.png"></p>
     <div class="popup" onclick="myFunction()">Сайт аналог:
       https://practicum.yandex.ru/blog/yazyk-c-plus-dlya-chego-nuzhen/ &nbsp
       <span class="popuptext" id="myPopup"><img class="analog" src="../img/website_analog.png"></span>

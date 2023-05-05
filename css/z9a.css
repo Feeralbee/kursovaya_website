@@ -1,0 +1,483 @@
+body {
+	background-color: darkseagreen;
+	margin: 0;
+	font-size: 28px;
+	font-family: 'Jost', Helvetica, sans-serif;
+	height: 100%;
+	min-height: 100%;
+}
+
+.colorForm {
+	width: 20%;
+	float: left;
+}
+
+OPTGROUP.color {
+	background: #fc0;
+	/* Цвет фона */
+	color: red;
+	/* Цвет текста */
+}
+
+OPTGROUP.hue {
+	background: #f0f0f0;
+	/* Цвет фона */
+	color: #000;
+	/* Цвет текста */
+}
+
+OPTION {
+	color: #000;
+	/* Цвет текста */
+	background: #fff;
+	/* Цвет фона */
+}
+
+#c1:hover {
+	color: #fcf8cf;
+}
+
+p {
+	text-indent: 1.25cm;
+}
+
+p.letter::first-letter {
+	color: chartreuse;
+}
+
+#demo {
+	text-indent: 0cm;
+}
+
+#header {
+	background-color: #333;
+	padding: 3%;
+	text-align: center;
+}
+
+#navbar {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	align-items: stretch;
+	text-align: center;
+	background-color: #616161;
+}
+
+/* Ссылки навигационной панели */
+#navbar a {
+	float: left;
+	display: flex;
+	flex-grow: 1;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+#navbar a:hover {
+	background-color: #ffffff;
+	color: black;
+}
+
+#navbar a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+
+
+
+/* Содержимое страницы */
+.content {
+	display: flex;
+	flex-direction: column;
+	padding: 16px;
+	text-align: justify;
+	margin-bottom: 44px;
+	/* width: 80%; */
+}
+
+.content h2 {
+	text-align: center;
+}
+
+.colortext {
+	color: #663399;
+}
+
+/* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку панель навигации получает новое положение в верхней части страницы (position:fixed and top:0) */
+.sticky+.content {
+	padding-top: 60px;
+}
+
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	text-align: justify;
+}
+
+#footerimg {
+	width: 30px;
+	height: 25px;
+}
+
+
+#footer p {
+	text-indent: 0cm;
+}
+
+.leftstr,
+.popup {
+	font-size: 14px;
+	float: left;
+	/* Обтекание справа */
+	width: 50%;
+	/* Ширина текстового блока */
+}
+
+.popup {
+	text-align: right;
+	/* Выравнивание по правому краю */
+}
+
+a:hover {
+	color: #4CAF50;
+}
+
+a {
+	color: whitesmoke;
+	text-decoration: none;
+}
+
+/* Всплывающим окном - может быть везде, где угодно */
+.popup {
+	padding-top: 20px;
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Фактическое всплывающее окно */
+.popup .popuptext {
+	visibility: hidden;
+	width: 260px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 30%;
+	margin-left: -80px;
+}
+
+.analog {
+	width: 200px;
+	height: 150px;
+}
+
+/* Всплывающее окно со стрелками */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Переключите этот класс - скрыть и показать всплывающее окно */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+h2 {
+	color: darkred;
+}
+
+h3 {
+	text-align: center;
+	color: #008b8b;
+}
+
+.quartercolumn {
+	float: left;
+	width: 100%
+}
+
+.quartercolumn img {
+	width: 25%;
+	border: 3px solid green;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+input[type=reset] {
+	background-color: #c300ff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	text-align: center;
+}
+
+input[type=reset]:hover {
+	background-color: #8413a7;
+}
+
+.passe-partout {
+	padding: 40px;
+	/* Размер паспарту */
+	background: #f0f0f0;
+	/* Цвет фона паспарту */
+	border: 2px solid #800000;
+	/* Параметры рамки */
+	display: inline-block;
+	/* Строчно-блочный элемент */
+	margin: 0;
+	/* Убираем отступы */
+
+}
+
+.passe-partout img {
+	border: 2px solid greenyellow;
+	/* Рамка вокруг изображения */
+}
+
+.passe-partout img:hover {
+	border: 2px solid #800000;
+}
+
+a.rollover {
+	background: url(../img/rollover1.jpg);
+	/* Путь к файлу с исходным рисунком  */
+	display: block;
+	/*  Рисунок как блочный элемент */
+	width: 196px;
+	/* Ширина рисунка */
+	height: 183px;
+	/*  Высота рисунка */
+}
+
+a.rollover:hover {
+	background: url(../img/rollover2.jpg);
+	/* Путь к файлу с заменяемым рисунком  */
+}
+
+.h2history {
+	text-decoration: underline;
+}
+
+/* Сетка: четыре одинаковых столбца, которые плавают рядом друг с другом */
+.column {
+	float: left;
+	width: 15%;
+	padding: 10px;
+}
+
+/* Стиль изображения внутри сетки */
+.column img {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.column img:hover {
+	opacity: 1;
+}
+
+/* Очистить поплавки после колонок */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Расширяющийся контейнер изображений */
+.container {
+	position: relative;
+	display: none;
+}
+
+/* Расширение текста изображения */
+#imgtext {
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+	color: white;
+	font-size: 20px;
+}
+
+/* Закрываемая кнопка внутри развернутого изображения */
+.closebtn {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	color: white;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.galleryimg {
+	width: 100%;
+}
+
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+	background-color: #555;
+}
+
+/* Контейнер слайд-шоу */
+.slideshow-container {
+	position: relative;
+	background: #f1f1f1f1;
+}
+
+/* Слайды */
+.mySlides {
+	display: none;
+	padding: 80px;
+	text-align: center;
+}
+
+/* Вперед и назад кнопки */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -30px;
+	padding: 16px;
+	color: #888;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Позиция "кнопки вперед" на право */
+.next {
+	position: absolute;
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора добавьте черный цвет фона с небольшим количеством прозрачного */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+}
+
+/* Контейнер точки/пули/индикатора */
+.dot-container {
+	text-align: center;
+	padding: 20px;
+	background: #ddd;
+}
+
+/* Точки/пули/индикаторы */
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+/* Добавить цвет фона для активной точки/круга */
+.active,
+.dot:hover {
+	background-color: #717171;
+}
+
+/* Добавить курсивный стиль шрифта для всех цитат */
+q {
+	font-style: italic;
+}
+
+/* Добавить синий цвет для автора */
+.author {
+	color: cornflowerblue;
+}
+
+#expandedImgGG {
+	width: 100%;
+}
+
+#subject {
+	height: 200px;
+}
+
+#img_banner_programmer {
+	color: greenyellow;
+	font-size: larger;
+	text-align: center;
+}
+
+#steps_kurs {
+	margin: 5px;
+}

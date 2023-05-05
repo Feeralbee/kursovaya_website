@@ -4,12 +4,12 @@
 <head>
   <title>Зачем изучать C++</title>
 <link type="../image/x-icon" href="../img/favicon.png" rel="icon">
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/z9a.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <script src="../js/popup.js"></script>
+  <script src="../js/z9c.js"></script>
 </head>
 
 <body>
@@ -36,11 +36,11 @@
     <center>
       <h2>Обратный отсчет времени до экзаменов</h2>
       <p id="demo"></p>
-      <script type="text/javascript" src="../js/timer.js"></script>
+      <script type="text/javascript" src="../js/z9a.js"></script>
     </center>
-
+    <script src="../js/z9e.js"></script>
     <h2>Форма контакта</h2>
-    <form onsubmit="alert('Ваши данные отправлены');return false">
+    <form onsubmit="send_form()">
       <label for="fname">Имя</label>
       <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
 
@@ -57,15 +57,16 @@
       </select>
 
       <label for="subject">Вопрос</label>
-      <textarea id="subject" name="subject" placeholder="Написать нечто.." style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Написать нечто.."></textarea>
 
       <input type="submit" value="Отправить">
-      <input type="reset" value="Очистить" style="text-align: center;" onclick="this.form.reset();">
+      <input type="reset" value="Очистить" onclick="this.form.reset();">
 
     </form>
   </div>
+  <script src="../js/z9d.js"></script>
   <div id="footer">
-    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9</p>
+    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9 &nbsp <img id="footerimg" src="../img/favicon.png"></p>
     <div class="popup" onclick="myFunction()">Сайт аналог:
       https://practicum.yandex.ru/blog/yazyk-c-plus-dlya-chego-nuzhen/ &nbsp
       <span class="popuptext" id="myPopup"><img class="analog" src="../img/website_analog.png"></span>

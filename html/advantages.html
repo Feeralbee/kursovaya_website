@@ -4,12 +4,12 @@
 <head>
   <title>Зачем изучать C++</title>
   <link type="../image/x-icon" href="../img/favicon.png" rel="icon">
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/z9a.css" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <script src="../js/popup.js"></script>
+  <script src="../js/z9c.js"></script>
 </head>
 
 <body>
@@ -29,39 +29,70 @@
     <a href="./website_map.html">Карта сайта</a>
     <a href="./contacts.html">Контакты</a>
   </div>
-
-
+  <script src="../js/z9f.js"></script>
   <div class="content">
     <h2>Преимущества</h2>
+      <div class="row">
+        <div class="column">
+          <img src="../img/cpp.png" alt ="111111" class="galleryimg" onclick="galery(this);">
+        </div>
+        <div class="column">
+          <img src="../img/favicon.png" class="galleryimg" onclick="galery(this);">
+        </div>
+        <div class="column">
+          <img src="../img/passpartu.jpg" class="galleryimg" onclick="galery(this);">
+        </div>
+        <div class="column">
+          <img src="../img/rollover1.jpg" class="galleryimg" onclick="galery(this);">
+        </div>
+        <div class="column">
+          <img src="../img/rollover2.jpg" class="galleryimg" onclick="galery(this);">
+        </div>
+      </div>
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImgGG">
+      </div>
     <ul>
-      <li><b>Отсутствие overhead.</b><br><br>
-        Нет потребления ресурсов на вспомогательные операции.
-        <br><br>
-        Метапрограммирование — возможность поручать большу́ю часть работы компилятору.
-        <br><br>
-        C++ — строгий язык, в нём уже на этапе компиляции ясно, что будет делать программа. А значит, на этапе
-        компиляции
-        можно сделать ряд вычислений и оптимизаций, чтобы программа работала быстрее.
-        <br><br>
-        Это позволяет писать гибкие и быстро работающие программы. В других языках приходится платить скоростью за
-        сложность, универсальность, красоту, понятность. В C++ сложные выразительные конструкции превращаются в простой
-        и
-        быстрый микрокод.
-        <br><br>
+      <li><b>Отсутствие overhead.</b>
+        <p class="letter">
+          Нет потребления ресурсов на вспомогательные операции.
+        </p>
+        <p class="letter">
+          Метапрограммирование — возможность поручать большу́ю часть работы компилятору.
+        </p>
+        <p class="letter">
+          C++ — строгий язык, в нём уже на этапе компиляции ясно, что будет делать программа. А значит, на этапе
+          компиляции
+          можно сделать ряд вычислений и оптимизаций, чтобы программа работала быстрее.
+        </p>
+        <p class="letter">
+          Это позволяет писать гибкие и быстро работающие программы. В других языках приходится платить скоростью за
+          сложность, универсальность, красоту, понятность. В C++ сложные выразительные конструкции превращаются в
+          простой
+          и
+          быстрый микрокод.
+        </p>
       </li>
-      <li><b>Метапрограммирование — возможность поручать большу́ю часть работы компилятору.</b><br>
-        C++ — строгий язык, в нём уже на этапе компиляции ясно, что будет делать программа. А значит, на этапе
-        компиляции можно сделать ряд вычислений и оптимизаций, чтобы программа работала быстрее.
-        <br><br>
-        Это позволяет писать гибкие и быстро работающие программы. В других языках приходится платить скоростью за
-        сложность, универсальность, красоту, понятность. В C++ сложные выразительные конструкции превращаются в простой
-        и быстрый микрокод.
+      <li>
+        <b>Метапрограммирование — возможность поручать большу́ю часть работы компилятору.</b>
+        <p class="letter">
+          C++ — строгий язык, в нём уже на этапе компиляции ясно, что будет делать программа. А значит, на этапе
+          компиляции можно сделать ряд вычислений и оптимизаций, чтобы программа работала быстрее.
+        </p>
+        <p class="letter">
+          Это позволяет писать гибкие и быстро работающие программы. В других языках приходится платить скоростью за
+          сложность, универсальность, красоту, понятность. В C++ сложные выразительные конструкции превращаются в
+          простой
+          и быстрый микрокод.
+        </p>
       </li>
     </ul>
   </div>
-
+  <script src="../js/z9d.js"></script>
   <div id="footer">
-    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9</p>
+    <p class="leftstr">&nbsp&copy Жуков Владислав МП-31-20 id:9 &nbsp <img id="footerimg" src="../img/favicon.png"></p>
     <div class="popup" onclick="myFunction()">Сайт аналог:
       https://practicum.yandex.ru/blog/yazyk-c-plus-dlya-chego-nuzhen/ &nbsp
       <span class="popuptext" id="myPopup"><img class="analog" src="../img/website_analog.png"></span>
