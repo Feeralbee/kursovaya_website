@@ -1,8 +1,5 @@
-*{
-	font-family: 'Jost', Helvetica, sans-serif;
-}
-
 body {
+	font-family: Arial, Helvetica, sans-serif;
 	background-color: darkseagreen;
 	margin: 0;
 	font-size: 28px;
@@ -16,7 +13,7 @@ body {
 }
 
 OPTGROUP.color {
-	background: #fc0;
+	background: rgb(0, 247, 255);
 	/* Цвет фона */
 	color: red;
 	/* Цвет текста */
@@ -230,7 +227,7 @@ h4 {
 	margin-bottom: 0;
 }
 
-#primechanie{
+#primechanie {
 	margin-top: 0px;
 }
 
@@ -494,7 +491,7 @@ q {
 	margin: 5px;
 }
 
-#stop_btn{
+#stop_btn {
 	padding: 10px;
 	border: 3px solid green;
 	background: #ffffff;
@@ -505,4 +502,105 @@ q {
 #stop_btn:hover {
 	background: #ddd;
 	color: black;
-  }
+}
+
+/* Удалите поля и отступы из списка */
+ul.tasks {
+	margin: 20px;
+	padding: 0;
+}
+
+/* Стиль элементов списка */
+ul.tasks li.task {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	list-style-type: none;
+	background: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+
+	/* сделайте элементы списка просматриваемыми */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Установите для всех нечетных элементов списка другой цвет (полосы зебры) */
+ul.tasks li.task:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+/* Более темный фон-цвет при наведении курсора */
+ul.tasks li.task:hover {
+	background: #ddd;
+}
+
+/* При нажатии на кнопку добавить цвет фона и вычеркнуть текст */
+ul.tasks li.task.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+}
+
+/* Добавить отметку "проверено" при нажатии на нее */
+ul.tasks li.task.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+}
+
+/* Стиль кнопки закрытия */
+.close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+	background-color: #f44336;
+	color: white;
+}
+
+/* Стиль заголовка */
+.tasks_header {
+	background-color: darkcyan;
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+}
+
+/* Очистить поплавки после заголовка */
+.tasks_header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Стиль кнопки "Добавить" */
+.addBtn {
+	padding: 10px;
+	width: 15%;
+	height: 18px;
+	background: #d9d9d9;
+	color: #555;
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+}
+
+.addBtn:hover {
+	background-color: #bbb;
+}
