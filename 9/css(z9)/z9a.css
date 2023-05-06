@@ -1,8 +1,11 @@
+*{
+	font-family: 'Jost', Helvetica, sans-serif;
+}
+
 body {
 	background-color: darkseagreen;
 	margin: 0;
 	font-size: 28px;
-	font-family: 'Jost', Helvetica, sans-serif;
 	height: 100%;
 	min-height: 100%;
 }
@@ -185,7 +188,7 @@ a {
 	position: absolute;
 	z-index: 1;
 	bottom: 125%;
-	left: 30%;
+	left: 50%;
 	margin-left: -80px;
 }
 
@@ -222,14 +225,23 @@ h3 {
 	color: #008b8b;
 }
 
+h4 {
+	color: red;
+	margin-bottom: 0;
+}
+
+#primechanie{
+	margin-top: 0px;
+}
+
 .quartercolumn {
 	float: left;
 	width: 100%
 }
 
 .quartercolumn img {
-	width: 25%;
-	border: 3px solid green;
+	width: 32.7%;
+	border: 3px solid white;
 }
 
 input[type=text],
@@ -297,7 +309,7 @@ input[type=reset]:hover {
 }
 
 a.rollover {
-	background: url(../img/rollover1.jpg);
+	background: url("../img(z9)/rollover1.jpg");
 	/* Путь к файлу с исходным рисунком  */
 	display: block;
 	/*  Рисунок как блочный элемент */
@@ -308,7 +320,7 @@ a.rollover {
 }
 
 a.rollover:hover {
-	background: url(../img/rollover2.jpg);
+	background: url("../img(z9)/rollover2.jpg");
 	/* Путь к файлу с заменяемым рисунком  */
 }
 
@@ -481,3 +493,16 @@ q {
 #steps_kurs {
 	margin: 5px;
 }
+
+#stop_btn{
+	padding: 10px;
+	border: 3px solid green;
+	background: #ffffff;
+	color: #000000;
+	cursor: pointer;
+}
+
+#stop_btn:hover {
+	background: #ddd;
+	color: black;
+  }
