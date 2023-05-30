@@ -1,3 +1,4 @@
+/* настройка стиля видимой части странинцы */
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: darkseagreen;
@@ -7,11 +8,13 @@ body {
 	min-height: 100%;
 }
 
+/* настройка стиля формы цвета */
 .colorForm {
 	width: 20%;
 	float: left;
 }
 
+/* настройка стиля  формы с цветами */
 OPTGROUP.color {
 	background: rgb(0, 247, 255);
 	/* Цвет фона */
@@ -19,6 +22,7 @@ OPTGROUP.color {
 	/* Цвет текста */
 }
 
+/* настройка стиля формы с цветами */
 OPTGROUP.hue {
 	background: #f0f0f0;
 	/* Цвет фона */
@@ -26,6 +30,7 @@ OPTGROUP.hue {
 	/* Цвет текста */
 }
 
+/* настройка стиля для option */
 OPTION {
 	color: #000;
 	/* Цвет текста */
@@ -33,28 +38,34 @@ OPTION {
 	/* Цвет фона */
 }
 
+/* настройка стиля при наведении на выбор цвета */
 #c1:hover {
 	color: #fcf8cf;
 }
 
+/* настройка стиля для параграфа */
 p {
 	text-indent: 1.25cm;
 }
 
+/* настройка стиля первой буквы у к класса letter */
 p.letter::first-letter {
 	color: chartreuse;
 }
 
+/* настройка стиля для id="demo" */
 #demo {
 	text-indent: 0cm;
 }
 
+/* настройка стиля для заголовка */
 #header {
 	background-color: #333;
 	padding: 3%;
 	text-align: center;
 }
 
+/* настройка стиля меню */
 #navbar {
 	display: flex;
 	overflow: hidden;
@@ -76,11 +87,13 @@ p.letter::first-letter {
 	font-size: 17px;
 }
 
+/* настройка стиля при наведении на меню */
 #navbar a:hover {
 	background-color: #ffffff;
 	color: black;
 }
 
+/* настройка стиля активной вкладки меню */
 #navbar a.active {
 	background-color: #4CAF50;
 	color: white;
@@ -98,26 +111,17 @@ p.letter::first-letter {
 	/* width: 80%; */
 }
 
+/* настройка стиля заголовка второго уровня содержимого страницы */
 .content h2 {
 	text-align: center;
 }
 
+/* настройка стиля для класса colortext */
 .colortext {
 	color: #663399;
 }
 
-/* Класс sticky добавляется в навигационную панель с помощью JS, когда он достигает своей позиции прокрутки */
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-/* Добавить некоторые верхние отступы к содержимому страницы для предотвращения внезапного быстрого перемещения (поскольку панель навигации получает новое положение в верхней части страницы (position:fixed and top:0) */
-.sticky+.content {
-	padding-top: 60px;
-}
-
+/* настройка стиля информационного подвала */
 #footer {
 	position: fixed;
 	left: 0;
@@ -128,16 +132,18 @@ p.letter::first-letter {
 	text-align: justify;
 }
 
+/* настройка стиля изобржажений информационного подвала */
 #footerimg {
 	width: 30px;
 	height: 25px;
 }
 
-
+/* настройка стиля параграфа у информационного подвала */
 #footer p {
 	text-indent: 0cm;
 }
 
+/* настройка стиля для классов leftsrt и popup */
 .leftstr,
 .popup {
 	font-size: 14px;
@@ -147,15 +153,18 @@ p.letter::first-letter {
 	/* Ширина текстового блока */
 }
 
+/* настройка стиля для всплывающего окна */
 .popup {
 	text-align: right;
 	/* Выравнивание по правому краю */
 }
 
+/* настройка стиля для ссылок при наведении */
 a:hover {
 	color: #4CAF50;
 }
 
+/* настройка стиля для ссылок */
 a {
 	color: whitesmoke;
 	text-decoration: none;
@@ -189,6 +198,7 @@ a {
 	margin-left: -80px;
 }
 
+/* настройка стиля для класса analog */
 .analog {
 	width: 200px;
 	height: 150px;
@@ -213,34 +223,41 @@ a {
 	animation: fadeIn 1s;
 }
 
+/* настройка стиля для заголовка второго уровня */
 h2 {
 	color: darkred;
 }
 
+/* настройка стиля для заголовка третьего уровня */
 h3 {
 	text-align: center;
 	color: #008b8b;
 }
 
+/* настройка стиля для заголовка четвертого уровня */
 h4 {
 	color: red;
 	margin-bottom: 0;
 }
 
+/* настройка стиля для примечания на главной странцие */
 #primechanie {
 	margin-top: 0px;
 }
 
+/* настройка стиля для карты сайта */
 .quartercolumn {
 	float: left;
 	width: 100%
 }
 
+/* настройка стиля изображений для карты сайта */
 .quartercolumn img {
 	width: 32.7%;
 	border: 3px solid white;
 }
 
+/* настройка стиля для строки ввода с типом text, для формы выбора, и для textarea */
 input[type=text],
 select,
 textarea {
@@ -254,6 +271,7 @@ textarea {
 	resize: vertical;
 }
 
+/* настройка стиля для строки ввода с типом submit */
 input[type=submit] {
 	background-color: #4CAF50;
 	color: white;
@@ -264,10 +282,12 @@ input[type=submit] {
 	margin-bottom: 16px;
 }
 
+/* настройка стиля для строки ввода с типом submit при наведении */
 input[type=submit]:hover {
 	background-color: #45a049;
 }
 
+/* настройка стиля для строки ввода с типом reset */
 input[type=reset] {
 	background-color: #c300ff;
 	color: white;
@@ -278,10 +298,12 @@ input[type=reset] {
 	text-align: center;
 }
 
+/* настройка стиля для строки ввода с типом reset при наведении */
 input[type=reset]:hover {
 	background-color: #8413a7;
 }
 
+/* настройка стиля для паспарту */
 .passe-partout {
 	padding: 40px;
 	/* Размер паспарту */
@@ -296,15 +318,18 @@ input[type=reset]:hover {
 
 }
 
+/* настройка стиля для изображений в паспарту */
 .passe-partout img {
 	border: 2px solid greenyellow;
 	/* Рамка вокруг изображения */
 }
 
+/* настройка стиля для изображений в паспарту при наведении */
 .passe-partout img:hover {
 	border: 2px solid #800000;
 }
 
+/* настройка стиля для ссылок класса rollover */
 a.rollover {
 	background: url("../img(z9)/rollover1.jpg");
 	/* Путь к файлу с исходным рисунком  */
@@ -316,11 +341,13 @@ a.rollover {
 	/*  Высота рисунка */
 }
 
+/* настройка стиля для ссылок класса rollover при наведении */
 a.rollover:hover {
 	background: url("../img(z9)/rollover2.jpg");
 	/* Путь к файлу с заменяемым рисунком  */
 }
 
+/* настройка стиля для класа h2history */
 .h2history {
 	text-decoration: underline;
 }
@@ -338,6 +365,7 @@ a.rollover:hover {
 	cursor: pointer;
 }
 
+/* настройка стиля на для изображений при наведении класса column */
 .column img:hover {
 	opacity: 1;
 }
@@ -374,10 +402,12 @@ a.rollover:hover {
 	cursor: pointer;
 }
 
+/* настройка стиля изборажений в галерее изображений */
 .galleryimg {
 	width: 100%;
 }
 
+/* настройка стиля для текста, который скрывается при нажатии кнопки скрыть */
 .collapsible {
 	background-color: #777;
 	color: white;
@@ -390,6 +420,7 @@ a.rollover:hover {
 	font-size: 15px;
 }
 
+/* настройка стиля для класса active и при наведении collapsible */
 .active,
 .collapsible:hover {
 	background-color: #555;
@@ -473,24 +504,29 @@ q {
 	color: cornflowerblue;
 }
 
+/* настройка стиля для изображений в галерее изображений со вкладками */
 #expandedImgGG {
 	width: 100%;
 }
 
+/* настройка стиля для id subject */
 #subject {
 	height: 200px;
 }
 
+/* настройка стиля для id img_banner_programmer */
 #img_banner_programmer {
 	color: greenyellow;
 	font-size: larger;
 	text-align: center;
 }
 
+/* настройка стиля для "Этапов выполнения проекта" */
 #steps_kurs {
 	margin: 5px;
 }
 
+/* настройка стиля для кнопки stop в полноэкранном видео */
 #stop_btn {
 	padding: 10px;
 	border: 3px solid green;
@@ -499,6 +535,7 @@ q {
 	cursor: pointer;
 }
 
+/* настройка стиля для кнопки stop в полноэкранном видео при наведении */
 #stop_btn:hover {
 	background: #ddd;
 	color: black;
@@ -566,6 +603,7 @@ ul.tasks li.task.checked::before {
 	padding: 12px 16px 12px 16px;
 }
 
+/* настройка стиля для кнопки close при наведении */
 .close:hover {
 	background-color: #f44336;
 	color: white;
@@ -601,6 +639,7 @@ ul.tasks li.task.checked::before {
 	border-radius: 0;
 }
 
+/* настройка стиля при наведении на кнопку добавить */
 .addBtn:hover {
 	background-color: #bbb;
 }

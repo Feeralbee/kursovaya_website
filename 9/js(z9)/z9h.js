@@ -1,3 +1,4 @@
+// скрипт скрытия части текста на странице
 var coll = document.getElementsByClassName("collapsible");
 var i;
 

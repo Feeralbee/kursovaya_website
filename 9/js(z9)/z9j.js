@@ -1,3 +1,4 @@
+// скрипт галерея цитат
 var slideIndex = 1;
 showSlides(slideIndex);
 

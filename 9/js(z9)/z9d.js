@@ -1,3 +1,4 @@
+// скрипт смены цвета заднего фона при уменьшении ширины экрана
 function myFunctionBackcolor(x) {
     if (x.matches) { // Если медиа запрос совпадает
         document.body.style.backgroundColor = "yellow";
